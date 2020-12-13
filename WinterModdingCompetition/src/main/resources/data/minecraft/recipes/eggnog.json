@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "",
+    "eme",
+    " w "
+  ],
+  "key":
+  {
+    "e":
+    {
+      "item": "minecraft:egg"
+    },
+    "m":
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "w":
+  {
+    "item": "minecraft:water"
+  },
+  "result":
+  {
+    "item": "winter:eggnog",
+    "count": 1
+  }
+}
