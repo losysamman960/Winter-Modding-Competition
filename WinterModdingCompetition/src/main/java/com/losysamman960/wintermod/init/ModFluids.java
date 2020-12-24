@@ -36,7 +36,8 @@ public class ModFluids {
             .luminosity(10)
             .rarity(Rarity.RARE)
             .sound(SoundEvents.ENTITY_COW_MILK)
-            .overlay(EGGNOG_OVERLAY_RL)).block(() -> ModFluids.EGGNOG_BLOCK.get());
+            .overlay(EGGNOG_OVERLAY_RL)).block(() -> ModFluids.EGGNOG_BLOCK.get())
+            .bucket(ModItems.EGGNOG_BUCKET);
 
     public static final RegistryObject<FlowingFluidBlock> EGGNOG_BLOCK = ModBlocks.BLOCKS.register("eggnog",
             () -> new FlowingFluidBlock(() -> ModFluids.EGGNOG_FLUID.get(), Block.Properties.create(Material.WATER)
