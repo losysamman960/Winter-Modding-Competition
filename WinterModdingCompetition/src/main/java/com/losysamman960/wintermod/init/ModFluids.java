@@ -1,12 +1,46 @@
 package com.losysamman960.wintermod.init;
 
 import com.losysamman960.wintermod.TheWinteryYear;
+import net.minecraft.block.Block;
+import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.block.material.Material;
+import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.Fluid;
+import net.minecraft.item.Rarity;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvents;
+import net.minecraftforge.fluids.FluidAttributes;
+import net.minecraftforge.fluids.ForgeFlowingFluid;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModFluids {
 
+    public static final ResourceLocation EGGNOG_STILL_RL = new ResourceLocation(TheWinteryYear.MOD_ID, "blocks/eggnog_still");
+    public static final ResourceLocation EGGNOG_FLOWING_RL = new ResourceLocation(TheWinteryYear.MOD_ID, "blocks/eggnog_flowing");
+
+    public static final ResourceLocation EGGNOG_OVERLAY_RL = new ResourceLocation(TheWinteryYear.MOD_ID, "blocks/eggnog_overlay");
+
     public static final DeferredRegister<Fluid> FLUIDS = new DeferredRegister<>(ForgeRegistries.FLUIDS, TheWinteryYear.MOD_ID);
 
+    public static final RegistryObject<FlowingFluid> EGGNOG_FLUID = FLUIDS.register("eggnog_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.EGGNOG_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> EGGNOG_FLOWING = FLUIDS.register("eggnog_flowing",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.EGGNOG_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties EGGNOG_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> EGGNOG_FLUID.get(), () -> EGGNOG_FLOWING.get(), FluidAttributes.builder(EGGNOG_STILL_RL, EGGNOG_STILL_RL)
+            .density(5)
+            .luminosity(10)
+            .rarity(Rarity.RARE)
+            .sound(SoundEvents.ENTITY_COW_MILK)
+            .overlay(EGGNOG_OVERLAY_RL)).block(() -> ModFluids.EGGNOG_BLOCK.get());
+
+    public static final RegistryObject<FlowingFluidBlock> EGGNOG_BLOCK = ModBlocks.BLOCKS.register("eggnog",
+            () -> new FlowingFluidBlock(() -> ModFluids.EGGNOG_FLUID.get(), Block.Properties.create(Material.WATER)
+            .doesNotBlockMovement()
+            .noDrops()
+            .hardnessAndResistance(100.0f)));
 }

@@ -1,5 +1,6 @@
 package com.losysamman960.wintermod;
 
+import com.losysamman960.wintermod.init.ModFluids;
 import com.losysamman960.wintermod.init.ModItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -26,6 +27,7 @@ public class TheWinteryYear
 
         MinecraftForge.EVENT_BUS.register(this);
         ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModFluids.FLUIDS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event) {
@@ -35,7 +37,7 @@ public class TheWinteryYear
     private void doClientStuff(final FMLClientSetupEvent event) {
 
     }
-    public static final ItemGroup TAB = new ItemGroup("The Wintery Month") {
+    public static final ItemGroup TAB = new ItemGroup("the_wintery_month") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModItems.EGG_NOG.get());
