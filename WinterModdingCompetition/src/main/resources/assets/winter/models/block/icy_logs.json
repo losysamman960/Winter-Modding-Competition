@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "winter:blocks/icy_logs_top",
+    "side": "winter:blocks/icy_logs"
+  }
+}

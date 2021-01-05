@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":    { "model": "winter:block/icy_logs" },
+    "axis=z":     { "model": "winter:block/icy_logs", "x": 90 },
+    "axis=x":     { "model": "winter:block/icy_logs", "x": 90, "y": 90 }
+  }
+}

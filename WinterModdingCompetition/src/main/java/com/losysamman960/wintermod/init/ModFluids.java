@@ -17,12 +17,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModFluids {
 
+    //Textures
     public static final ResourceLocation EGGNOG_STILL_RL = new ResourceLocation(TheWinteryYear.MOD_ID, "blocks/eggnog_still");
     public static final ResourceLocation EGGNOG_FLOWING_RL = new ResourceLocation(TheWinteryYear.MOD_ID, "blocks/eggnog_flowing");
-
     public static final ResourceLocation EGGNOG_OVERLAY_RL = new ResourceLocation(TheWinteryYear.MOD_ID, "blocks/eggnog_overlay");
 
-    public static final DeferredRegister<Fluid> FLUIDS = new DeferredRegister<>(ForgeRegistries.FLUIDS, TheWinteryYear.MOD_ID);
+    //Registry
+    public static final DeferredRegister<Fluid> FLUIDS =  new DeferredRegister<>(ForgeRegistries.FLUIDS, TheWinteryYear.MOD_ID);
 
     public static final RegistryObject<FlowingFluid> EGGNOG_FLUID = FLUIDS.register("eggnog_fluid",
             () -> new ForgeFlowingFluid.Source(ModFluids.EGGNOG_PROPERTIES));
@@ -30,18 +31,20 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> EGGNOG_FLOWING = FLUIDS.register("eggnog_flowing",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.EGGNOG_PROPERTIES));
 
+    //Fluid Properties
     public static final ForgeFlowingFluid.Properties EGGNOG_PROPERTIES = new ForgeFlowingFluid.Properties(
-            () -> EGGNOG_FLUID.get(), () -> EGGNOG_FLOWING.get(), FluidAttributes.builder(EGGNOG_STILL_RL, EGGNOG_STILL_RL)
+            ()-> EGGNOG_FLUID.get(), ()-> EGGNOG_FLOWING.get(), FluidAttributes.builder(EGGNOG_STILL_RL, EGGNOG_FLOWING_RL)
             .density(5)
             .luminosity(10)
             .rarity(Rarity.RARE)
-            .sound(SoundEvents.ENTITY_COW_MILK)
+            .sound(SoundEvents.BLOCK_PORTAL_AMBIENT)
             .overlay(EGGNOG_OVERLAY_RL)).block(() -> ModFluids.EGGNOG_BLOCK.get())
             .bucket(ModItems.EGGNOG_BUCKET);
 
+    //Fluid Block
     public static final RegistryObject<FlowingFluidBlock> EGGNOG_BLOCK = ModBlocks.BLOCKS.register("eggnog",
             () -> new FlowingFluidBlock(() -> ModFluids.EGGNOG_FLUID.get(), Block.Properties.create(Material.WATER)
-            .doesNotBlockMovement()
-            .noDrops()
-            .hardnessAndResistance(100.0f)));
+                    .doesNotBlockMovement()
+                    .hardnessAndResistance(100.0f)
+                    .noDrops()));
 }
