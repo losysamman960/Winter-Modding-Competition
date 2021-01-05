@@ -1,12 +1,12 @@
 {
-  "type": "winter:icy_fence",
+  "type": "winter:icy_wall",
   "pools": [
     {
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "winter:icy_fence"
+          "name": "winter:icy_wall"
         }
       ]
     }
