@@ -2,8 +2,9 @@
   "item.winter.eggnog": "Eggnog",
   "itemGroup.the_wintery_month": "The Wintery Month",
   "item.winter.eggnog_bucket": "Eggnog Bucket",
-  "item.winter.icy_planks": "Icy Planks",
-  "item.winter.icy_logs": "Icy Logs",
-  "item.winter.icy_leaves": "Icy Leaves",
-  "item.winter.icy_fence": "Icy Fence"
+  "block.winter.icy_planks": "Icy Planks",
+  "block.winter.icy_logs": "Icy Logs",
+  "block.winter.icy_leaves": "Icy Leaves",
+  "block.winter.icy_wall": "Icy Wall",
+  "block.winter.icy_fence_gate": "Icy Fence Gate"
 }

@@ -28,5 +28,8 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.ICY_PLANKS.get(), new Item.Properties().group(TheWinteryYear.TAB)));
 
     public static final RegistryObject<Item> ICY_FENCE_ITEM = ITEMS.register("icy_fence",
-            () -> new BlockItem(ModBlocks.ICY_FENCE.get(), new Item.Properties().group(TheWinteryYear.TAB)));
+            () -> new BlockItem(ModBlocks.ICY_WALL.get(), new Item.Properties().group(TheWinteryYear.TAB)));
+
+    public static final RegistryObject<Item> ICY_FENCE_GATE_ITEM = ITEMS.register("icy_fence_gate",
+            () -> new BlockItem(ModBlocks.ICY_FENCE_GATE.get(), new Item.Properties().group(TheWinteryYear.TAB)));
 }
