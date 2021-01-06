@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "winter:blocks/icy_planks"
+  }
+}

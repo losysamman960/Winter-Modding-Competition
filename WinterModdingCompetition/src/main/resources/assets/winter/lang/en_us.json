@@ -5,6 +5,10 @@
   "block.winter.icy_planks": "Icy Planks",
   "block.winter.icy_logs": "Icy Logs",
   "block.winter.icy_leaves": "Icy Leaves",
-  "block.winter.icy_wall": "Icy Wall",
-  "block.winter.icy_fence_gate": "Icy Fence Gate"
+  "block.winter.icy_fence": "Icy Fence",
+  "block.winter.icy_fence_gate": "Icy Fence Gate",
+  "block.winter.icy_ladder": "Icy Ladder",
+  "block.winter.icy_sapling": "Icy Sapling",
+  "block.winter.icy_button": "Icy Button",
+  "block.winter.icy_pressure_plate": "Icy Pressure Plate"
 }

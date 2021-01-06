@@ -2,28 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "geg",
-    "gmg",
-    "ggg"
+    "GEG",
+    "GMG",
+    "GGG"
   ],
-  "key":
-  {
-    "e":
-    {
+  "key": {
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "E": {
       "item": "minecraft:egg"
     },
-    "m":
-    {
-      "item": "minecraft:milk_bucket"
+    "G": {
+      "item": "minecraft:glass"
     }
   },
-  "w":
-  {
-    "item": "minecraft:water"
-  },
-  "result":
-  {
-    "item": "winter:eggnog",
-    "count": 1
+  "result": {
+    "item": "winter:eggnog"
   }
 }

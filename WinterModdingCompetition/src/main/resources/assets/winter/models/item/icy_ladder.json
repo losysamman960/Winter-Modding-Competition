@@ -1,0 +1,7 @@
+
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "winter:blocks/icy_ladder"
+  }
+}

@@ -16,5 +16,7 @@ public class ClientEventBusSubscriber {
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
         RenderTypeLookup.setRenderLayer(ModBlocks.ICY_LEAVES.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.ICY_LADDER.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.ICY_SAPLING.get(), RenderType.getCutout());
     }
 }

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "winter:block/icy_ladder" },
+    "facing=east":  { "model": "winter:block/icy_ladder", "y": 90 },
+    "facing=south": { "model": "winter:block/icy_ladder", "y": 180 },
+    "facing=west":  { "model": "winter:block/icy_ladder", "y": 270 }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "type": "winter:icy_logs",
+  "type": "minecraft:block",
   "pools": [
     {
       "rolls": 1,
@@ -7,6 +7,11 @@
         {
           "type": "minecraft:item",
           "name": "winter:icy_logs"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
         }
       ]
     }

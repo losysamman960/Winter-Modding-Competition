@@ -34,7 +34,7 @@ public class ModFluids {
     //Fluid Properties
     public static final ForgeFlowingFluid.Properties EGGNOG_PROPERTIES = new ForgeFlowingFluid.Properties(
             ()-> EGGNOG_FLUID.get(), ()-> EGGNOG_FLOWING.get(), FluidAttributes.builder(EGGNOG_STILL_RL, EGGNOG_FLOWING_RL)
-            .density(5)
+            .density(20)
             .luminosity(10)
             .rarity(Rarity.RARE)
             .sound(SoundEvents.BLOCK_PORTAL_AMBIENT)

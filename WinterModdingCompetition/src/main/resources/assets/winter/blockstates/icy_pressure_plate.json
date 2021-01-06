@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "winter:block/icy_pressure_plate" },
+    "powered=true": { "model": "winter:block/icy_pressure_plate_down" }
+  }
+}
