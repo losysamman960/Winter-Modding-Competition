@@ -18,5 +18,9 @@ public class ClientEventBusSubscriber {
         RenderTypeLookup.setRenderLayer(ModBlocks.ICY_LEAVES.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.ICY_LADDER.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.ICY_SAPLING.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.SNOW_GLOBE.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(ModBlocks.CRYSTALIZED_SNOW.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.ICY_DOOR.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.ICY_TRAPDOR.get(), RenderType.getCutout());
     }
 }

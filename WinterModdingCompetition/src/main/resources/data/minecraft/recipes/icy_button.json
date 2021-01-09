@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "winter:icy_planks"
+    }
+  ],
+  "result": {
+    "item": "winter:icy_button",
+    "count": 4
+  }
+}

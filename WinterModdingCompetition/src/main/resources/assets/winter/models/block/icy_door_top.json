@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "winter:blocks/icy_door_bottom",
+    "top": "winter:blocks/icy_door_top"
+  }
+}

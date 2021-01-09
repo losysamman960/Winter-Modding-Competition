@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "s s",
+    "sss",
+    "s s"
+  ],
+  "key": {
+    "s": {
+      "item": "winter:icy_planks"
+    }
+  },
+  "result": {
+    "item": "winter:icy_ladder"
+  }
+}

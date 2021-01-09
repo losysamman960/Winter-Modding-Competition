@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "winter:block/icy_slabs" },
+    "type=top": { "model": "winter:block/icy_slabs_top" },
+    "type=double": { "model": "winter:block/icy_planks" }
+  }
+}

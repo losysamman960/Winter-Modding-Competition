@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "winter:block/snow_globe" },
+    "facing=south": { "model": "winter:block/snow_globe", "y":  180},
+    "facing=west": { "model": "winter:block/snow_globe", "y":  270},
+    "facing=east": { "model": "winter:block/snow_globe", "y":  90}
+  }
+}

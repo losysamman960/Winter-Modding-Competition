@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "iii",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "winter:icy_trapdoor"
+    }
+  },
+  "result": {
+    "item": "winter:icy_trapdoor",
+    "count": 2
+  }
+}

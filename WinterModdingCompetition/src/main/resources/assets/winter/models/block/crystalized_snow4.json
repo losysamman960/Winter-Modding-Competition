@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "winter:blocks/crystalized_snow_stage4"
+  }
+}

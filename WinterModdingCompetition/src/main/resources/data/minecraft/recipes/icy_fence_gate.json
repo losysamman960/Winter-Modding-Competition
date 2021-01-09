@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "wiw",
+    "wiw"
+  ],
+  "key": {
+    "i": {
+      "item": "winter:icy_planks"
+    },
+    "w": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "winter:icy_fence_gate"
+  }
+}

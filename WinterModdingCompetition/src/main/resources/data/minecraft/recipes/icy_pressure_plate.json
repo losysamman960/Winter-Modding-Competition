@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "winter:icy_planks"
+    },
+    {
+      "item": "winter:icy_planks"
+    }
+  ],
+  "result": {
+    "item": "winter:icy_pressure_plate",
+    "count": 2
+  }
+}

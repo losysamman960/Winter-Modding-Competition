@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "winter:blocks/icy_ladder"
+    "layer0": "winter:items/crystalized_snow_seed"
   }
 }

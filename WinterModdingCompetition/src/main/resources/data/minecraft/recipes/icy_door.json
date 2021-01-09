@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ii",
+    "ii",
+    "ii"
+  ],
+  "key": {
+    "i": {
+      "item": "winter:icy_planks"
+    }
+  },
+  "result": {
+    "item": "winter:icy_door",
+    "count": 3
+  }
+}

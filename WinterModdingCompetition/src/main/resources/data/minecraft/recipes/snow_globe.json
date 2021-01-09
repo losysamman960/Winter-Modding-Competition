@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ggg",
+    "grg",
+    "ddd"
+  ],
+  "key": {
+    "d": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "r": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "result": {
+    "item": "winter:snow_globe"
+  }
+}

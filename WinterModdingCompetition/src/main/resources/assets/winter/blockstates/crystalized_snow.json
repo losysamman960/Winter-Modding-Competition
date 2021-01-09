@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "winter:block/crystalized_snow0" },
+    "age=1": { "model": "winter:block/crystalized_snow1" },
+    "age=2": { "model": "winter:block/crystalized_snow2" },
+    "age=3": { "model": "winter:block/crystalized_snow3" },
+    "age=4": { "model": "winter:block/crystalized_snow4" },
+    "age=5": { "model": "winter:block/crystalized_snow5" },
+    "age=6": { "model": "winter:block/crystalized_snow6" },
+    "age=7": { "model": "winter:block/crystalized_snow7" }
+  }
+}
