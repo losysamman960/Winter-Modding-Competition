@@ -64,7 +64,7 @@ public class ModItems {
     public static final RegistryObject<Item> ICY_TRAPDOOR_ITEM = ITEMS.register("icy_trapdoor",
             () -> new BlockItem(ModBlocks.ICY_TRAPDOR.get(), new Item.Properties().group(TheWinteryYear.TAB)));
 
-    public static final RegistryObject<Item> ICY_SLAB_ITEM = ITEMS.register("icy_slab",
+    public static final RegistryObject<Item> ICY_SLAB_ITEM = ITEMS.register("icy_slabs",
             () -> new BlockItem(ModBlocks.ICY_SLABS.get(), new Item.Properties().group(TheWinteryYear.TAB)));
 
     public static final RegistryObject<Item> ICY_STAIRS_ITEM = ITEMS.register("icy_stairs",
